@@ -3,10 +3,15 @@ def areaRectangulo(ancho, largo):
 
 def calcularPerimetro(ancho,largo):
     return ancho+ancho+largo+largo
+    
+ancho = int(input("Ingrese el ancho del rectangulo: "))
+largo = int(input("Ingrese el largo del rectangulo: "))
 
-ancho = input(int("Ingrese el ancho del rectangulo: "))
-largo = input(int("Ingrese el largo del rectangulo: "))
+print(calcularPerimetro(ancho, largo))
+print(areaRectangulo(ancho, largo))
 
-areaRectangulo(ancho, largo)
-calcularPerimetro(ancho, largo)
+for i in range(0,largo):
+    for j in range(0,ancho):
+        print("*", end="")
+    print()
 
